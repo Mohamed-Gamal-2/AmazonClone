@@ -1,0 +1,217 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.headerLogo{
+    width: 100px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.formContainer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.signinForm{
+    height: 280px;
+    width: 350px;
+    border: 1px #cacacc solid;
+    padding: 30px;
+    border-radius: 10px;
+}
+.signinHead{
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 10px;
+}
+.labelEOM{
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#EOM {
+    width: 100%;
+    height: 30px;
+    font-size: 13px;
+    border-radius: 5px;
+    border: 1px #99999b solid;
+}
+#EOM:focus {
+    outline: none;
+    border: 1px black solid;
+    box-shadow: 0px 0px 10px #007185;
+    padding-left: 10px;
+}
+#password {
+    width: 100%;
+    height: 30px;
+    font-size: 13px;
+    border-radius: 5px;
+    border: 1px #99999b solid;
+    margin-bottom: 10px;
+}
+#password:focus {
+    outline: none;
+    border: 1px black solid;
+    box-shadow: 0px 0px 10px #007185;
+    padding-left: 10px;
+}
+.signinBtn{
+    width: 100%;
+    height: 30px;
+    background-color: #ffd814;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.signinBtn:hover{
+    background-color: #e6c211;
+    cursor: pointer;
+}
+.termsAndCond{
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+ul{
+    margin-top: 25px;
+    list-style: inside none;
+    background-image: url(../images/arrow-sign.png); 
+    background-size: 5px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+li{
+    margin: 10px;
+    font-size: 13px;
+}
+a{
+    text-decoration: none;
+}
+.afterForm{
+    display: flex;
+    justify-content: center;
+    width: 350px;
+}
+.newLine{
+    background-color: #c0b8b1;
+    width: 10%;
+    height: 1px;
+    align-self: center;
+    margin: 5px;
+    width: 105px;
+}
+.container2{
+    display: flex;
+    justify-content: center;
+}
+.newtoAmazon{
+    color: #99999b;
+    width: max-content;
+    font-size: 13px;
+}
+.newAccBtn{
+   font-size: 13px; 
+   height: 30px;
+   width: 350px;
+   background-color: white;
+   border-radius: 10px;
+   border: #cacacc 1px solid;
+}
+.newAccBtn:hover{
+    border: #cacacc 1px solid;
+    background-color: #eaeaef;
+    cursor: pointer;
+}
+footer{
+    position: relative;
+}
+.footerline{
+    position: absolute;
+    top: 0;
+    background-image: linear-gradient(to left, white, #d4d2d2, #d4d2d2, white);
+    height: 2px;
+    width: 100%;
+}
+.footerline2{
+    position: absolute;
+    top: 2px;
+    background-image: linear-gradient(to left, white, #f9f9f9c8, #f9f9f9c8, white);
+    height: 25px;
+    width: 100%;
+}
+.footerLinks{
+    margin-top: 30px;
+}
+.footerLinks a{
+    margin: 10px;
+    font-size: 11px;
+}
+.copyRight{
+    font-size: 11px;
+    color: black;
+    text-align: center;
+}
+#errorMsg{
+    color: red;
+    font-size: 12px;
+    display: none;
+    margin: 5px;
+}
+#incorrectMsg{
+    width: 350px;
+    border: 1px red solid;
+    border-radius: 10px;
+    padding: 15px 15px 15px 60px;
+    position: relative;
+    display: none;
+
+}
+
+.incorrectMsgHead{
+    color: red;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.incorrectMsgBody{
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.warningImg{
+    width: 40px;
+    position: absolute;
+    top :10px;
+    left: 10px
+}
+#userNameInput{
+    margin: 10px;
+}
+#userNameInput{
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container-sb{
+    display: flex;
+
+}
+.Change{
+    margin-bottom: 10px;
+    padding: 0px 10px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    vertical-align: top;
+}
+.labelShowPW{
+ font-size: 13px;
+}

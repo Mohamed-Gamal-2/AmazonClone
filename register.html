@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Register</title>
+     <link rel="icon" type="image/x-icon" href="./images/Amazon-logo-meaning.jpg">
+     <link rel="stylesheet" href="./css/bootstrap.min.css" />
+     <link rel="stylesheet" href="./css/all.min.css" />
+     <link rel="stylesheet" href="./css/register.css" />
+ 
+</head>
+<body>
+  <div class="d-flex w-100 justify-content-center my-2">
+    <img src="./images/amazonlogo.jpg" width="110px" alt="">
+  </div>
+    <div class="container d-flex w-100 justify-content-center mt-2 mb-4">
+      <div>
+      <div>
+        <form method="post" name="custom_form" id="customForm" onsubmit="return FormValidation()" action="./login.html">
+            <div class="form_box">
+               <h1>Registration Form</h1>
+
+               <div class="input-row">
+                <label for="userName" class="legend">Name</label>
+                    <input type="text" id="userName" name="userName" placeholder="Name*">
+                    <span class="error">Please Enter Your Name</span>
+                  </div>
+                  <div class="input-row">
+                <label for="userEmail" class="legend">Email</label>
+                    <input type="text" id="userEmail" name="email" placeholder="Email*">
+                    <span class="error">Email is already exsist</span>
+                  </div>
+                  <div class="input-row">
+                <label for="userPhone" class="legend">Phone</label>
+                    <input type="text" id="userPhone" name="phone" placeholder="Phone*">
+                    <span class="error">Please Enter Your Phone</span>
+                  </div>
+                  <div class="input-row">
+                <label for="userPassword" class="legend">Password</label>
+                    <input placeholder="password*" name="password" id="userPassword" type="password">
+                    <span class="error">Please Enter Your password</span>
+                  </div> 
+                  <div class="register-btn">
+                  <input class="ml-0" type="submit" value="Submit" name=""> 
+                </div>
+                <div class="mt-4 privacy">
+                  <span>By creating a new account, you agree to
+                  </span>
+                  <span><a href="">Terms of Use, Sale</a><span> and </span><a href="">Privacy Notice.</a>
+                  </span>
+                </div>
+                <div class="login mt-4">
+                  <span>Do you have an Amazon account?
+                  </span>
+                  <span><a href="./login.html">Lognin</a></span>
+                </div>
+            </div>
+        </form>
+     </div>
+     <div class="foter-links mt-4 d-flex w-100 justify-content-center py-2">
+      <a href="">Terms of Use</a>
+      <a href="">Privacy Notice</a>
+      <a href="">Help</a>
+     </div>
+     <div class="footer">
+      <p class="text-center">Copyright © 1996-2023 Company reserved Amazon.com or its affiliates</p>
+     </div>
+    </div>
+  </div>
+        <script src="./js/jquery-3.4.1.min.js"></script>
+        <script src="./js/popper.min.js"></script>
+        <script src="./js/bootstrap.js"></script>
+        <script src="./js/register.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/styleeh.css" />
+  <title>Amazon</title>
+  <link rel="icon" type="image/x-icon" href="./images/Amazon-logo-meaning.jpg">
+</head>
+
+<body>
+  <nav class="navbar nav navbar-expand-lg bg-dark " id="top">
+    <div class="container-fluid">
+      <div class="logo-img border-hover">
+        <a class="navbar-brand" href="" onclick="getProducts(`https://fakestoreapi.com/products`);"><img id="logo" src="images/amazonlogo2.png" alt="amazon" /></a>
+      </div>
+      <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav w-25 me-auto py-3 d-flex justify-content-center align-items-center">
+          <li class="nav-item cart position-relative fs-4 text-center pt-3 ">
+            <a href="./cart.html" class="text-decoration-none text-white"><span>Cart <i
+                  class="fas  fa-shopping-cart"></i></span></a>
+            <span id="cartCount" class="badge badge-light  py-2 cart-bagde text-warning ">0</span>
+          </li>
+        </ul>
+        <ul class="d-flex justify-content-center align-items-center w-100 mt-md-2">
+          <li class="nav-item fs-4 d-none" id="logOutBtn">
+            <button class="btn btn-warning mx-2  px-5"  onclick="logOut()">
+              <a class="text-decoration-none text-dark" >logout</a>
+            </button>
+          </li>
+          <li class="nav-item fs-4"id="logBtn">
+            <button class="btn btn-warning mx-3 px-5"  onclick="location.href='./login.html' ">
+              <a class="text-decoration-none text-dark">Login</a>
+            </button>
+          </li>
+          <li class="nav-item w-100">
+            <div class="d-flex w-100 my-auto">
+              <input id="searchInput"  class="form-control w-75" type="search" placeholder="Search"
+                aria-label="Search" onkeyup="searchIn()"/>
+              </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="tabs py-1">
+    <ul class="nav w-100 d-flex justify-content-center">
+      <li class="nav-item mx-3 border-hover">
+        <a onclick="removeElements() , getProducts(`https://fakestoreapi.com/products`)" class="btn nav-link active"
+          aria-current="page">All</a>
+      </li>
+      <li class="nav-item mx-3 border-hover" onclick="getElectronics()">
+        <a class="btn nav-link">Electronics</a>
+      </li>
+      <li class="nav-item mx-3 border-hover dropdown">
+        <a class="btn nav-link dropdown-toggle" data-bs-toggle="dropdown">Clothes</a>
+        <ul class="dropdown-menu">
+          <li>
+            <a class="btn dropdown-item" onclick="getClothes(`men's clothing`)">men's Clothes</a>
+          </li>
+          <li>
+            <a class="btn dropdown-item" onclick="getClothes(`women's clothing`)">women's Clothes</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <!-- <div id="page-loading">
+    <h2>Loding....</h2>
+  </div> -->
+  <div class="container ">
+    <div class="row my-4 py-4" id="itemProduct">
+      <!-- <h2 id="section-loading">loading....</h2> -->
+    </div>
+  </div>
+  <div class="lightBoxContainer d-flex justify-content-center align-items-center" id="lightContainerItem">
+    <div class="lightBoxItem position-relative" id="lightBoxItem">
+    </div>
+  </div>
+  <!--footer-->
+  <footer class="footer container-fluid">
+    <div class="backBtn text-center" onclick="backToTopy()">
+      <a href="#" class="btn">Back to top</a>
+    </div>
+    <div class="container w-75">
+      <div class="row mt-4">
+        <div class="col-md-3">
+          <div class="item text-white-50">
+            <h4>Get to Know Us</h4>
+            <ul class="text-left">
+              <li>About Amazon</li>
+              <li>Careers</li>
+              <li>Amazon Science</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="item text-white-50">
+            <h4>Shop with us</h4>
+            <ul class="text-left">
+              <li>Your Account</li>
+              <li>Your Orders</li>
+              <li>Your Addresses</li>
+              <li>Your List</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="item text-white-50">
+            <h4>Make Money With Us</h4>
+            <ul class="text-left">
+              <li>Protect and build your brand</li>
+              <li>Advertise Your Products</li>
+              <li>Sell on Amazon</li>
+              <li>Fulfillment by Amazon</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="item text-white-50">
+            <h4>Let US Help You</h4>
+            <ul class="text-left">
+              <li>Help</li>
+              <li>Shipping & Delivery</li>
+              <li>Return & Replacements</li>
+              <li>Amaxon App Download</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-100 generalLine my-3"></div>
+    <div class="text-center w-100 mt-4">
+      <img src="images/amazonlogo2.png" alt="amazon" height="100px" />
+    </div>
+  </footer>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="js/loginPW.js"></script> -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Sign In</title>
+    <link rel="icon" type="image/x-icon" href="./images/Amazon-logo-meaning.jpg">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <header class="container">
+        <a href="">
+            <img src="./images/Amazon_logo.svg.png" alt="Amazon" class="headerLogo">
+        </a>
+    </header>
+    <div class="container">
+        <div id="incorrectMsg">
+
+        </div>
+    </div>
+
+    <body>
+        <div class="formContainer">
+            <form action="./loginpassword.html" target="_self" method="post" class="signinForm" id="signinForm">
+                <div class="signinHead">Sign in</div>
+                <label for="EOM" class="labelEOM">Email or mobile phone number</label><br>
+                <input type="text" id="EOM" name="EOM"><br>
+                <div id="errorMsg">! Enter your email or mobile phone number</div>
+                <input type="submit" value="Continue" class="signinBtn" id="continueBtn" >
+                <div class="termsAndCond">
+                    By signing in, you agree to <a href="">Amazon's Conditions of Use</a> and <a href="">Privacy Notice</a>.
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="">Need help?</a></li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+        <div class="container2">
+            <div class="afterForm">
+                <div class="newLine"></div>
+                <div class="newtoAmazon">New to Amazon?</div>
+                <div class="newLine"></div>
+            </div>
+        </div>
+        <div class="container">
+            <button class="newAccBtn" id="regPage" onclick="location.href = 'register.html'">Create your Amazon account</button>
+        </div>
+    </body>
+    <footer>
+        <div class="footerline"></div>
+        <div class="footerline2"></div>
+            <div class="container">
+                <div class="footerLinks">
+                    <a href="">Conditions of Use </a>
+                    <a href=""> Privacy Notice </a>
+                    <a href=""> Help </a>
+                </div>
+            </div>
+        <div class="copyRight">&copy; 1996–2023, Amazon.com, Inc. or its affiliates</div>
+        
+    </footer>
+    <script src="./js/login.js"></script>
+</body>
+</html>

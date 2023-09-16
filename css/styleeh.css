@@ -1,0 +1,143 @@
+*{
+box-sizing: border-box !important;
+} 
+.generalLine{
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.cart-bagde{
+    position: absolute;
+    top: -15px;
+    left:48px;
+  }
+.border-hover{
+    padding: 2px;
+}
+.border-hover:hover{
+    border: solid 1px #fff;
+}
+.logo-img{
+    width: 130px;
+}
+#logo{
+    width: 100%;
+    font-size: 20px;
+    line-height: 30px;
+}
+.navbar-brand{
+color: #fff;
+}
+.nav-link {
+    color: #fff !important;
+}
+.tabs{
+    height: 51px;
+    color: #fff !important;
+    background-color: #232f3e !important;
+}
+/* mohamed edits*/
+.footer{
+    background-color: #232f3e;
+    padding: 0px;
+}
+
+.backBtn{
+    background-color: #37475a;
+    padding: 5px 0px;
+}
+.backBtn a{
+    text-decoration: none;
+    color: white;
+}
+.backBtn:hover{
+    background-color: #475d79;
+
+}
+
+li{
+    list-style: none;
+    margin-bottom: 5px;
+    padding-top: 4px;
+}
+ul{
+    padding-left: 0 !important;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+
+}
+
+
+.item h4 {
+    color: white;
+}
+
+/*
+my edits after mohamed
+*/
+.productDetails{
+    height: 450px;
+}
+.img-product {
+    width: 100%;
+    height: 200px;
+}
+.hover-item:hover{
+    border: solid 1px black;
+    padding: 3px;
+}
+.lightBoxContainer{
+    position: fixed;
+    top: 0;
+    left: 0%;
+    right: 0%;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+}
+.lightBoxItem{
+    width: 70%;
+    height: 70%;
+    background-color: #fff; 
+    border-radius: 10px;
+}
+/* cart page */
+
+.media-body-content{
+    display: flex;
+  }
+  .media-body-links a{
+    text-decoration: none;
+  }
+  .link-save{
+    margin-right: 25px;
+    color: green;
+  }
+  .link-delete{
+    padding-left: 25px;
+  }
+  
+.none{
+    visibility: hidden;
+}
+#section-loading {
+    text-align: center;
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  #page-loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:  #37475a;
+    display: flex;
+    z-index: 111;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
